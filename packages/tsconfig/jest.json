@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "jest",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "jsx": "react",
+    "isolatedModules": false
+  }
+}
