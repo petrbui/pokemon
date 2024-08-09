@@ -1,0 +1,65 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  // directUrl = env("DIRECT_URL")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model pokemons {
+  id               BigInt  @id @unique @default(autoincrement())
+  pokedex_number   BigInt?
+  name             String?
+  german_name      String?
+  japanese_name    String?
+  generation       BigInt?
+  status           String?
+  species          String?
+  type_number      BigInt?
+  type_1           String?
+  type_2           String?
+  height_m         Float?
+  weight_kg        String?
+  abilities_number BigInt?
+  ability_1        String?
+  ability_2        String?
+  ability_hidden   String?
+  total_points     BigInt?
+  hp               BigInt?
+  attack           BigInt?
+  defense          BigInt?
+  sp_attack        BigInt?
+  sp_defense       BigInt?
+  speed            BigInt?
+  catch_rate       String?
+  base_friendship  String?
+  base_experience  String?
+  growth_rate      String?
+  egg_type_number  BigInt?
+  egg_type_1       String?
+  egg_type_2       String?
+  percentage_male  String?
+  egg_cycles       String?
+  against_normal   Float?
+  against_fire     Float?
+  against_water    Float?
+  against_electric Float?
+  against_grass    Float?
+  against_ice      Float?
+  against_fight    Float?
+  against_poison   Float?
+  against_ground   Float?
+  against_flying   Float?
+  against_psychic  Float?
+  against_bug      Float?
+  against_rock     Float?
+  against_ghost    Float?
+  against_dragon   Float?
+  against_dark     Float?
+  against_steel    Float?
+  against_fairy    Float?
+}
