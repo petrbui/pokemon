@@ -1,9 +1,9 @@
-
 ### Apps and Packages
 
 - `admin`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `api`: a [Express.js](https://expressjs.com/) app
+- `api`: a [nest.js](https://nestjs.com/) with [prisma](https://prisma.io) app connected to a PostgreSQL database run
+  in [supabase](https://supabase.io)
 - `ui`: a [shadcn/ui](https://ui.shadcn.com/) components shared by both `web` and `admin` applications
 
 ## Adding shadcn component
@@ -27,7 +27,7 @@ This Turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-npm run build
+yarn build
 ```
 
 ### Develop
@@ -35,5 +35,5 @@ npm run build
 To develop all apps and packages, run the following command:
 
 ```
-npm run dev
+yarn dev
 ```
